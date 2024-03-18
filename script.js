@@ -44,9 +44,17 @@ for (var i = 0; i < navLinks.length; i++) {
   });
 }
 
-// Add this code to your script.js file
+// For Hire Me btn to render with contact me form
+document.getElementById('hire-me-btn').addEventListener('click', function() {
+  // Scroll to the contact form section
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  
+});
+
+// Clear contact form 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent form submission
+  
   // Perform form validation
   var name = document.getElementById('clientname').value;
   var email = document.getElementById('clientemail').value;
@@ -65,13 +73,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   
   // If all validations pass, submit the form
   // Replace the alert with actual form submission code
-  
   alert('Form submitted successfully');
-});
-
-// For Hire Me btn to render with contact me form
-document.getElementById('hire-me-btn').addEventListener('click', function() {
-  // Scroll to the contact form section
-  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
   
+  // Reset the form fields
+  document.getElementById('clientname').value = '';
+  document.getElementById('clientemail').value = '';
+  document.getElementById('clientphone').value = '';
+  document.getElementById('clientenquiry').value = '';
+  document.getElementById('isclient').checked = false;
 });

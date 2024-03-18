@@ -193,21 +193,21 @@ nav.sticky .menu-btn {
 
 .home .button button:hover {
   border-color: white;
-  background-color: #d81717;
+  background-color: #96e43d;
   color: #140f0f;
 }
 
 /* About Section Styling */
 /* Those Elements Where We Have Apply Same CSS,
  I'm Selecting Directly 'Section Tag' and 'Class'  */
-section {
+section {                                        
   padding-top: 40px;
 }
 
 section .content {
-  width: 80%;
+  width: 80%;            
   margin: 40px auto;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;       
 }
 
 .about .about-details {
@@ -848,7 +848,7 @@ footer .text span a:hover {
 
 .about-details .button a:hover::after {
   content: '';
-  position: absolute;
+  position: absolute; 
   left: 0;
   bottom: -2px;
   width: 100%;
